@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Dashboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+
+  <header class="header">
+  <div class="header__inner">
+    <img class="header__logo" src="img/comp_logo.png" alt="company's logo">
+    <h1 class="header__title">
+      My Dashboard
+    </h1>
+  </div>
+</header>
+<main>
+ <!-- Creating tooltips for the graph -->
+  <div id="tooltip" class="hidden">
+    <p><span id="title">100</span></p>
+    <p><span id="date">100</span></p>
+    <p><span id="amount">100</span></p>
+  </div>
+  <!-- Creating graph layout -->
+  <div class="container all-graphs">
+    <div class="box main-graph-1">
+    <div class="padding-maker"></div>
+      <h1> Total sales per month - 2016</h1>
+    </div>
+      <div class="container" id="container2">
+        <div class="box der1-graph-1">
+          <h2> Total sales per Region </h2>
+        </div>
+        <div class="box der2-graph-1">
+          <h2> Stacked bar Sales (pct) </h2>
+        </div>
+    </div>
+    <div class="box main-graph-2">
+    <div class="padding-maker"></div>
+      <h1> Total cost per month - 2016</h1>
+    </div>
+      <div class="container" id="container3">
+        <div class="box der1-graph-2">
+          <h2> Total costs per Region </h2>
+        </div>
+        <div class="box der2-graph-2">
+          <h2> Stacked bar Costs (pct) </h2>
+        </div>
+    </div>
+  </div>
+
+
+</main>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="enquire.js"></script>
+<script src="company_sales.js"></script>
+</body>
+</html>
